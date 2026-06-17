@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L'IA au Collège Saint Pierre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
       max-width: 800px;
       margin: 0 auto;
       padding: 40px 24px;
-      color: #222;
+      color: #2d2d2d;
       line-height: 1.7;
       background: #fff;
+      font-size: 16px;
     }
     .header {
       display: flex;
@@ -28,56 +30,95 @@
       flex-shrink: 0;
     }
     h1 {
-      font-size: 1.75em;
+      font-size: 1.65em;
+      font-weight: 700;
       color: #1a3a5c;
       margin: 0;
-      line-height: 1.25;
+      line-height: 1.2;
+      letter-spacing: -0.3px;
     }
     h2 {
-      font-size: 1.2em;
+      font-size: 1.05em;
+      font-weight: 600;
       color: #1a3a5c;
       margin-top: 36px;
       border-left: 4px solid #e8a0b0;
       padding-left: 12px;
+      letter-spacing: -0.1px;
+    }
+    p {
+      margin: 12px 0;
     }
     .badge {
       display: inline-block;
       background: #e8f4e8;
       color: #2a7a2a;
-      font-size: 0.78em;
-      font-weight: bold;
+      font-size: 0.72em;
+      font-weight: 600;
       padding: 2px 10px;
-      border-radius: 12px;
+      border-radius: 20px;
       margin-left: 8px;
-      font-family: Arial, sans-serif;
       vertical-align: middle;
+      letter-spacing: 0.2px;
     }
     .badge-deploy {
       background: #fff3e0;
       color: #b85c00;
     }
-    a { color: #1a3a5c; text-decoration: underline; }
+    a {
+      color: #1a3a5c;
+    }
     .highlight-box {
       background: #f0f6ff;
       border-left: 4px solid #1a3a5c;
       padding: 14px 18px;
       margin: 16px 0;
-      border-radius: 0 6px 6px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.97em;
     }
-    .retour-box {
+    .retour-card {
       background: #fdf0f4;
-      border-left: 4px solid #e8a0b0;
-      padding: 14px 18px;
+      border: 1px solid #f0c4d0;
+      border-radius: 10px;
+      padding: 18px 20px;
       margin: 16px 0;
-      border-radius: 0 6px 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .retour-card-text {
+      flex: 1;
+      font-size: 0.96em;
+      color: #555;
+      line-height: 1.5;
+    }
+    .retour-card-text strong {
+      display: block;
+      color: #1a3a5c;
+      font-size: 1em;
+      margin-bottom: 4px;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: #1a3a5c;
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88em;
+      padding: 11px 20px;
+      border-radius: 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .btn-cta::after {
+      content: ' →';
     }
     footer {
       margin-top: 48px;
       padding-top: 16px;
-      border-top: 1px solid #ddd;
-      font-size: 0.85em;
-      color: #888;
-      font-family: Arial, sans-serif;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.84em;
+      color: #999;
     }
   </style>
 </head>
@@ -106,12 +147,13 @@
 
   <p>Une cellule d'échanges et de consultations sur vos retours d'expérience d'IA au collège Saint Pierre est mise en place en cette fin d'année.</p>
 
-  <div class="retour-box">
-    <a href="https://blanchardromain-cyber.github.io/retours-ia-profs/" target="_blank"><strong>Retours d'expérience IA</strong></a><br><br>
-    Cet espace rassemble des retours concrets d'enseignants, des pistes pédagogiques testées en classe et des ressources pratiques. Il est pensé comme un outil collaboratif vivant, enrichi au fil des expériences.
+  <div class="retour-card">
+    <div class="retour-card-text">
+      <strong>Retours d'expérience IA</strong>
+      Cet espace rassemble des retours concrets d'enseignants, des pistes pédagogiques testées en classe et des ressources pratiques. Enrichi au fil des expériences.
+    </div>
+    <a href="https://blanchardromain-cyber.github.io/retours-ia-profs/" target="_blank" class="btn-cta">Consulter</a>
   </div>
-
-  <p>N'hésitez pas à y contribuer avec vos propres retours — chaque expérience partagée enrichit la réflexion collective.</p>
 
   <h2>🔧 Albert IA pour enseignants <span class="badge badge-deploy">En cours de déploiement</span></h2>
 
